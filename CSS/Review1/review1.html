@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review1</title>
+    <link rel="stylesheet" href="">
+    <style>
+        table {
+            background-color: azure;
+            color: darkslategrey;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>คำถาม</th>
+            <th>คำตอบ</th>
+        </tr>
+        <tr>
+            <th>CSS syntax ประกอบด้วยอะไรบ้าง</th>
+            <td>ชื่อของ attribute และค่าของ attribute นั้นๆ โดยใช้ : คั่นระหว่างชื่อและค่านั้น ปิดท้ายด้วย ;
+                 เช่น color:green;</td>
+        </tr>
+
+        <tr>
+            <th>การเขียน CSS มีกี่แบบอะไรบ้าง</th>
+            <td>
+                <div>
+                <ol>มี 3 แบบคือ
+                    <li>inline เขียนลงไปใน tag ของ element นั้นๆโดยตรง เช่น &lt;p style="width:200px:"&gt;</li>
+                    <li>internal จัดกลุ่ม CSS ไว้ใน tag style เช่น 
+                        <pre>
+    &lt;style&gt; 
+        p {
+            width:20px;
+        }
+    &lt;/style&gt;
+                            
+                        </pre> </li>
+                    <li>external เขียนแยกไว้ต่างหากอีกไฟล์หนึ่ง โดยบอกตำแหน่งของไฟล์ด้วย tag link ที่ใส่ไว้ในส่วน head ของ
+                        html เช่น &lt;link rel="stylesheet" href=""&gt;
+                    </li>
+                </ol>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th>Combinator มีกี่แบบ อะไรบ้าง</th>
+        
+        
+        <td>
+            <ol>มี 4 แบบคือ
+                <li>ใช้ space เปล่าๆ เช่น div p จะเป็นการเลือก p ทุกตัวที่อยู่ภายใน div นี้</li>
+                <li>ใช้ > เช่น div>p จะเป็นการเลือก p ทุกตัวที่เป็นลูกคนแรกที่อยู่ภายใน div นี้</li>
+                <li>ใช้ + เช่น div+p จะเป็นการเลือก p ตัวแรกที่อยู่ในเลเวลเดียวกัน ตัวถัดมาจาก div นี้</li>
+                <li>ใช้ ~ เช่น div~p จะเป็นการเลือก p ทุกตัวที่อยู่ในเลเวลเดียวกัน ที่ถัดมาจาก div นี้</li>
+            </ol>
+        </td>
+    </tr>
+    </table>
+</body>
+</html>
