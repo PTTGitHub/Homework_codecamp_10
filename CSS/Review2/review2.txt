@@ -1,0 +1,29 @@
+Review2
+- property และ value คืออะไรแตกต่างกันอย่างไร
+
+property คือลักษณะเฉพาะของ element นั้นๆ ส่วน value คือค่าของ ลักษณะดังกล่าว
+เช่น ลักษณะ สีของตัวอักษร มีค่าเป็น สีแดง เป็นต้น
+<h2 style="color: red">Hello world</h2>
+
+- value unit มีกี่ประเภทอะไรบ้างแต่ละ ประเภทคืออะไร
+มี 2 ประเภทคือ แบบ Absolute และ แบบ Relative
+
+Absolute
+Unit	Description
+cm	centimeters
+mm	millimeters
+in	inches (1in = 96px = 2.54cm)
+px *	pixels (1px = 1/96th of 1in)
+pt	points (1pt = 1/72 of 1in)
+pc	picas (1pc = 12 pt)
+
+Relative
+em	Relative to the font-size of the element (2em means 2 times the size of the current font)	
+ex	Relative to the x-height of the current font (rarely used)	
+ch	Relative to the width of the "0" (zero)	
+rem	Relative to font-size of the root element	
+vw	Relative to 1% of the width of the viewport*	
+vh	Relative to 1% of the height of the viewport*	
+vmin	Relative to 1% of viewport's* smaller dimension	
+vmax	Relative to 1% of viewport's* larger dimension	
+%	Relative to the parent element

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge1</title>
+</head>
+<style>
+    body {
+        box-sizing: border-box;
+        line-height: 1.8;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+    .container {
+        width:60%;
+    }
+    label {
+        display: inline-block;
+        width: 140px;
+    }
+    input[type=text] {
+        width:180px;
+    }
+    input[type=button] {
+        font-size: 10px;
+    }
+    .star {
+        color: red;
+    }
+    .form_setup {
+        background-color: rgb(215,211,211);
+        margin-left: -5px;
+        color:grey;
+    }
+    form {
+        padding:10px;
+        border:6px solid rgb(215,211,211);
+    }
+    select.long {
+        display: inline-block;
+        width:190px;
+    }
+
+    
+</style>
+<body>
+    <div class="container">
+    <form action="">
+        <label for="name">Name <span class="star">*</span>:</label>
+        <input type="text" id="name" name="name">
+        <input type="button" value="?"> <br>
+        <label for="tab_text">Tab Text <span class="star">*</span>:</label>
+        <input type="text" id="tab_text" name="tab_text">
+        <input type="button" value="?"> <br>
+        <label for="url">URL <span class="star">*</span>:</label>
+        <span>http://www.wizehive.com/webform/</span>
+        <input type="text" id="url" name="url" size="15">
+        <div class="form_setup"><span style="padding-left: 5px;">FORM SETUP</span></div>
+        <label for="form">Form:</label>
+        <select class="long" id="form" name="form">
+            <option value="blank"></option>
+            <option value="2">2</option>
+        </select>
+        <input type="button" value="Edit"> <br>
+        <label for="logo">Logo:</label>
+        <span style="padding-right:64px">no logo uploaded</span>
+        <input type="button" value="Upload Logo"> <br>
+        <label for="template_text">Template Text:</label>
+        <select class="long" id="template_text" name="template_text">
+            <option value="english">English</option>
+        </select>
+        <input type="button" value="Edit"> <br>
+        <label for="review_form">Review Form:</label>
+        <select class="long" id="review_form" name="review_form">
+            <option value="default">Default</option>
+        </select><br>
+        
+        <label for="review_score">Review Score:</label>
+        <select class="long" id="review_score" name="review_score">
+            <option value="rating">Rating</option>
+        </select>
+        <input type="button" value="Reload Fields"> <br>
+
+        <label for="scoring_type">Scoring Type:</label>
+        <select id="scoring_type" name="scoring_type">
+            <option value="average">Average</option>
+        </select><br>
+
+        <label for="max_score">Max Score:</label>
+        <input type="text" id="max_score" name="max_score" value="4.00">
+    </form>
+    </div>
+</body>
+</html>
