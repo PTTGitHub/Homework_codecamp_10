@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/834eb4128a.js" crossorigin="anonymous"></script>
+    <title>รองเท้า เสื้อผ้า และอุปกรณ์เสริม</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        main {
+            position:relative;
+        }
+        p {
+            font-size:0.9em;
+        }
+        
+        ul {
+            list-style-type: none;
+        }
+        .nav1 {
+            padding:5px;
+            background-color: rgb(221, 223, 223);
+            display:flex;
+        }
+        .nav1 div {
+            display: inline-block;
+        }
+        .nav1 ul {
+            font-size: 0.7em;
+            padding-right:20px;
+            width:100%;
+
+            display: flex;
+            justify-content: flex-end;
+        }
+        .nav1 li {
+            margin: 5px;
+            padding-right: 5px;
+        }
+        .with_sep {
+            border-right: 1px solid black;
+        }
+        .nav2 {
+            display: flex;
+            justify-content: space-between;
+            padding:10px 0 10px 0;
+        }
+        .nav2 ul {
+
+            display: flex;
+            font-size: 0.9em;
+
+        }
+        .nav2 li {
+            padding: 5px;
+        }
+        .nav2 div {
+            width:32%;
+        }
+        .news {
+            background-color: rgb(221, 223, 223);
+            text-align: center;
+            font-size: 0.7em;
+            padding: 5px 0 5px 0;
+        }
+        .nav3 {
+            position:sticky;
+            background-color: white;
+        }
+        .sticky {
+            position:sticky;
+            top:20px;
+            background-color: red;
+        }
+        .nav3 ul {
+            display: flex;
+            justify-content: center;
+            padding:20px 0 20px 0;
+        }
+        .nav3 div {
+            position: relative;
+        }
+        .nav3 div h3 {
+            position: absolute;
+            left: 20px;
+            padding:20px 0 20px 0;
+        }
+        .nav3 li {
+            font-size: 0.9em;
+            padding: 0 15px 0 15px;
+        }
+        .image1 {
+            margin:auto;
+            display: flex;
+            justify-content: center;
+        }
+        .fom {
+            margin: 20px;
+            text-align: center;
+        }
+        input[type=button] {
+            color:white;
+            background-color: black;
+            padding:5px 10px 5px 10px;
+            border-radius: 20px;
+            margin:5px 0 5px 0;
+        }
+        .focus_shoe {
+            width: 97%;
+            margin:auto;
+            position: relative;
+            padding: 10px 0px 10px 00px;
+        }
+        .left_div {
+            position:absolute;
+            right: 0;
+            top: 10px;
+        }
+        .shoe_gall {
+            width: 97%;
+            margin:auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+    <nav class="nav1">
+        <div>
+        <i class="fas fa-snowman" style="margin-left:20px"></i>
+        </div>
+        <ul>
+            <li class="with_sep">ความช่วยเหลือ</li>
+            <li class="with_sep">เข้าร่วมกับเรา</li>
+            <li>ลงชื่อเข้าใช้</li>
+        </ul>
+    </nav>
+    <nav class="nav2">
+        <div>
+            <i class="fab fa-staylinked" style="font-size:30px; margin-left: 20px;"></i>
+        </div>
+        <ul>
+            <li>ผู้ชาย</li>
+            <li>ผู้หญิง</li>
+            <li>เด็ก</li>
+            <li>ออกแบบเอง</li>
+            <li>ลดราคา</li>
+            <li>SNKRS</li>
+        </ul>
+        <div style="padding-right:30px; text-align: right;">
+            <input type="text">
+            <i class="far fa-heart" style="padding:0 10px 0 10px"></i>
+            <i class="fas fa-shopping-bag" style="padding:0 10px 0 10px"></i>
+        </div>
+    </nav>
+    <div class="news">
+        <p>ลดสูงสุดถึง 40%</p>
+        <p>ช็อปสินค้าใหม่ทั้งหมดที่ลดราคาของเรา</p>
+    </div>
+    <nav class="nav3" style="position:sticky; top:0px">
+        <div></div>
+        <div><h3>ผู้ชาย</h3></div>
+        <div>
+            <ul>
+                <li>รองเท้า</li>
+                <li>เสื้อผ้า</li>
+                <li>อุปกรณ์</li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <div class="image1">
+        <img src="https://picsum.photos/id/199/1220/600" alt="">
+    </div>
+
+    <div class="fom">
+        <p>โปรเจกต์: Run Fearless</p>
+        <h1 style="padding:10px 0 10px 0">โฟมมาพบกับการใช้งาน</h1>
+        <p style="padding:5px 0 5px 0">พระอาทิตย์ยิ้มแฉ่งแข่งกับอากาศสดใส มีโฟมสนุกใส่ ใช้วิ่งได้ดี</p>
+        <input type="button" value="เลือกซื้อ">
+    </div>
+
+    <div class="focus_shoe">
+        <span >รองเท้าเด่น</span>
+        <div class="left_div">
+            <span style="padding:5px"><</span>
+            <span style="padding:5px">></span>
+        </div>
+    </div>
+
+    <div class="shoe_gall">
+        <div class="shoe">
+            <!-- <div> -->
+            <img src="https://picsum.photos/id/198/400/400" alt="">
+            <div style="width:100%; position:relative">
+                <span style="position:absolute; left:0">Nike Court Legacy Canvas</span>
+                <span style="position:absolute; right:0">B1,900</span>
+            </div>
+            <p style="padding-top:20px;color:grey">รองเท้าผู้ชาย</p>
+            <!-- </div> -->
+
+        </div>
+        <div class="shoe">
+            <!-- <div> -->
+            <img src="https://picsum.photos/id/197/400/400" alt="">
+            <div style="width:100%; position:relative">
+                <span style="position:absolute; left:0">Nike Air Zoom Pegasus 38</span>
+                <span style="position:absolute; right:0">B4,600</span>
+            </div>
+            <p style="padding-top:20px;color:grey">รองเท้าวิ่งผู้ชาย</p>
+            <!-- </div> -->
+
+        </div>
+        <div class="shoe">
+            <!-- <div> -->
+            <img src="https://picsum.photos/id/196/400/400" alt="">
+            <div style="width:100%; position:relative">
+                <span style="position:absolute; left:0">Nike Retro GTS</span>
+                <span style="position:absolute; right:0">B2,100</span>
+            </div>
+            <p style="padding-top:20px;color:grey">รองเท้าผู้ชาย</p>
+            <!-- </div> -->
+        </div>
+    </div>
+
+    <p style="width:97%; margin:40px auto 40px auto;">กำลังฮิต</p>
+
+    <div style="display:flex;margin:auto;width:97%;justify-content: space-between;">
+        <div style="position:relative;z-index:-1">
+            <img src="https://picsum.photos/id/195/600/700" alt="">
+            <span style="position:absolute;left:10px;bottom:60px;color:white">เสื้อยืดกราฟิก</span>
+            <input style="position:absolute; left:10px; bottom:20px" type="button" value="เลือกซื้อ">
+        </div>
+        <div style="position:relative;z-index:-1">
+            <img src="https://picsum.photos/id/194/600/700" alt="">
+            <span style="position:absolute;left:10px;bottom:60px;color:white">เสื้อยืดกราฟิก</span>
+            <input style="position:absolute; left:10px; bottom:20px" type="button" value="เลือกซื้อ">
+        </div>
+    </div>
+
+    <p style="width:97%; margin:40px auto 40px auto;">สินค้าล่าสุด</p>
+
+    <div style="display:flex;margin:auto;width:97%;justify-content: center;">
+        <div style="position:relative;z-index:-1">
+            <img src="https://picsum.photos/id/193/1225/500" alt="">
+        </div>
+    </div>
+
+    <div class="fom">
+        <h1 style="padding:10px 0 10px 0;font-size:2.5em">TECH PACK</h1>
+        <p style="padding:5px 0 5px 0">สร้างขึ้นเพื่ออนาคตที่ดีกว่าเดิม</p>
+        <input type="button" value="เลือกซื้อ">
+    </div>
+
+    <p style="width:97%; margin:40px auto 40px auto;">ห้ามพลาด</p>
+
+    <div style="display:flex;margin:auto;width:97%;justify-content: center;">
+        <div style="position:relative;z-index:-1">
+            <img src="https://picsum.photos/id/192/1225/500" alt="">
+            <span style="position:absolute;left:10px;bottom:120px;font-size:2em">MADE FROM</span>
+            <span style="position:absolute;left:10px;bottom:80px;font-size:2em">SPORT</span>
+            <input style="position:absolute; left:10px; bottom:20px" type="button" value="เลือกซื้อ">
+        </div>
+    </div>
+
+    <p style="width:97%; margin:40px auto 40px auto;">สินค้าพื้นฐาน</p>
+
+    <div class="shoe_gall">
+        <div class="shoe" style="position:relative">
+            <!-- <div> -->
+            <img src="https://picsum.photos/id/191/400/400" alt="">
+            <input style="position:absolute; left:10px; bottom:20px;background-color: white;color:black" type="button" value="เสื้อและเสื้อยืด">
+            <!-- </div> -->
+
+        </div>
+        <div class="shoe" style="position:relative">
+            <!-- <div> -->
+            <img src="https://picsum.photos/id/190/400/400" alt="">
+            <input style="position:absolute; left:10px; bottom:20px;background-color: white;color:black" type="button" value="กางเกงขาสั้น">
+            <!-- </div> -->
+
+        </div>
+        <div class="shoe" style="position:relative">
+            <!-- <div> -->
+            <img src="https://picsum.photos/id/189/400/400" alt="">
+            <input style="position:absolute; left:10px; bottom:20px;background-color: white;color:black" type="button" value="กางเกงขายาวและเลกกิ้ง">   
+            <!-- </div> -->
+        </div>
+    </div>
+
+    <div class="product" style="display:flex; justify-content: center;width:97%;margin:auto">
+        <div style="display:flex;justify-content: space-between;">
+            <ul style="list-style-type: none;font-size:0.8em;padding:20px">
+                <span style="line-height: 2em;">รองเท้าผู้ชาย</span>
+                <li>รองเท้าผู้ชายทั้งหมด</li>
+                <li>รองเท้าผู้ชายทั้งหมด</li>
+                <li>รองเท้าผู้ชายทั้งหมด</li>
+                <li>รองเท้าผู้ชายทั้งหมด</li>
+                <li>รองเท้าผู้ชายทั้งหมด</li>
+                <li>รองเท้าผู้ชายทั้งหมด</li>
+            </ul>
+
+            <ul style="list-style-type: none;font-size:0.8em;padding:20px">
+                <span style="line-height: 2em;">เสื้อผ้าผู้ชาย</span>
+                <li>เสื้อผ้าผู้ชายทั้งหมด</li>
+                <li>เสื้อผ้าผู้ชายทั้งหมด</li>
+                <li>เสื้อผ้าผู้ชายทั้งหมด</li>
+                <li>เสื้อผ้าผู้ชายทั้งหมด</li>
+                <li>เสื้อผ้าผู้ชายทั้งหมด</li>
+                <li>เสื้อผ้าผู้ชายทั้งหมด</li>
+            </ul>
+
+            <ul style="list-style-type: none;font-size:0.8em;padding:20px">
+                <span style="line-height: 2em;">อุปกรณ์กีฬาผู้ชาย</span>
+                <li>อุปกรณ์กีฬาผู้ชายทั้งหมด</li>
+                <li>อุปกรณ์กีฬาผู้ชายทั้งหมด</li>
+                <li>อุปกรณ์กีฬาผู้ชายทั้งหมด</li>
+                <li>อุปกรณ์กีฬาผู้ชายทั้งหมด</li>
+                <li>อุปกรณ์กีฬาผู้ชายทั้งหมด</li>
+                <li>อุปกรณ์กีฬาผู้ชายทั้งหมด</li>
+            </ul>
+
+            <ul style="list-style-type: none;font-size:0.8em;padding:20px">
+                <span style="line-height: 2em;">สินค้าเด่น</span>
+                <li>Black Friday</li>
+                <li>Cyber Monday</li>
+                <li>สินค้าผู้ชายทั้งหมด</li>
+                <li>สินค้าผู้ชายออกใหม่</li>
+
+            </ul>
+        </div>
+    </div>
+    </main>
+</body>
+</html>
