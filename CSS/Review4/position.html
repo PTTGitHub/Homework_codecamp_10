@@ -1,0 +1,86 @@
+<!-- Review4
+- position คืออะไร และ มีอะไรบ้าง
+
+    เป็น attribute ที่เอาไว้บอกลักษณะการจัดวางตำแหน่งของ element ประกอบด้วย static, relative, fixed, absolute, sticky
+
+- z-index คืออะไรใช้อย่างไร
+
+    ในกรณ๊ที่มีการซ้อนทับกันของ element จะสามารถใช้ z-index ในการบอกว่าอันไหนอยู่บน ล่าง โดยค่ามากกว่าจะอยู่บนค่าน้อยกว่า
+
+- ให้ทำตัวอย่างการใช้ position มาทุก property
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main {
+            width: 50%;
+            margin: auto;
+            outline: 1px dashed green;
+            position: relative;
+        }
+        div {
+            width:50%;
+            height: 100px;
+            outline: 1px solid red;
+            text-align: center;
+            margin:auto;
+        }
+        .static {
+            position: static;
+        }
+        .relative {
+            position: relative;
+            left: 20px;
+            bottom: 20px;
+        }
+        .fixed {
+            position: fixed;
+            left:0;
+            top: 50px;
+        }
+        .absolute {
+            position: absolute;
+            left: 20px;
+            top: 320px;
+        }
+        .sticky {
+            position: sticky;
+            top:40px;
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <main>Main
+    <div class="static">Static</div>
+    <div class="relative">Relative</div>
+    <div class="fixed">
+        <h3>Fixed</h3>
+        <p>Relative to viewport and not going anywhere</p>
+    </div>
+    <div class="absolute">
+        <h3>Absolute</h3>
+        <p>Relative to my positioned parent (main)</p>
+    </div>
+    <div class="static">Static</div>
+    <div class="static">Static</div>
+    <div class="static">Static</div>
+    <div class="sticky">Sticky</div>
+    <div class="static">Static</div>
+    <div class="static">Static</div>
+    <div class="static">Static</div>
+    <div class="static">Static</div>
+    <div class="static">Static</div>
+    <div class="static">Static</div>
+    <div class="static">Static</div>
+    <div class="static">Static</div>
+    <div class="static">Static</div>
+    </main>
+</body>
+</html>
