@@ -1,0 +1,17 @@
+Review3
+
+- value ใน display property มีอะไรบ้าง
+
+	block, inline, inline-block, none, hidden.
+
+- grid และ flex แตกต่างกันอย่างไร
+
+	grid จะแบ่งเป็นตาราง row กับ column
+
+	flex จะแบ่งเป็นส่วนๆคล้ายกัน แต่มีความเป็น responsive มากกว่า ใช้ง่ายกว่า
+
+- justify and align แตกต่างกันอย่างไร
+
+	justify คือ จัด items ไปตาม  flow ของมัน ถ้าเป็น row ก็จัดตามแนวนอน ถ้าเป็น column ก็จัดตามแนวตั้ง
+
+	align จะตรงข้ามกับ justify คือจัดตามแนวอีกแกนหนึ่ง ถ้า row ก็จัดแนวตั้ง ถ้า column ก็จัดแนวนอน
