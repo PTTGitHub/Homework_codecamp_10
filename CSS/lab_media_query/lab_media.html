@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Media Query</title>
+    <style>
+        * {
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        h1, h3 {
+            padding:10px;
+        }
+        p {
+            padding:10px;
+            font-size: 14px;
+            letter-spacing: 1px;
+            text-align: justify;
+        }
+        .blue-bg {
+            background-color: rgb(226, 238, 250);
+        }
+        .container {
+            width:100%;
+            padding:10px;
+            margin:auto;
+        }
+        .text-center {
+            text-align: center;
+        }
+        main {
+            display:flex;
+            flex-wrap: wrap;
+        }
+        nav {
+            width: 10%;
+
+        }
+        .news {
+            width: 10%;
+        }
+        .content {
+            width: 80%;
+        }
+        img {
+            width:100%;
+            padding:10px;
+
+        }
+        ul {
+            display: flex;
+            list-style-type: none;
+            flex-flow:column;
+        }
+        li {
+            padding:5px;
+        }
+        @media(max-width:750px) {
+            nav {
+                width:20%;
+            }
+            .content {
+                width:80%;
+            }
+            .news {
+                width:100%;
+            }
+        }
+        @media(max-width:600px) {
+            nav {
+                width:100%;
+            }
+            .content {
+                width:100%;
+            }
+            .news {
+                width:100%;
+            }
+            ul {
+            display: flex;
+            flex-flow:row;
+            justify-content: space-around;
+            }
+            .p-content {
+                background-color: rgb(226, 238, 250);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="blue-bg">
+        <div class="container">
+            <h1 class="text-center">Hello Responsive</h1>
+        </div>
+    </header>
+
+    
+    <div class="container">
+            <main>
+                <nav>
+                    <ul class="text-center">
+                        <li>Home</li>
+                        <li>Products</li>
+                        <li>Services</li>
+                        <li>News</li>
+                        <li>Contact</li>
+                    </ul>
+                </nav>
+
+                <div class="content">
+                    <div class="img-box">
+                        <img src="https://picsum.photos/id/1/1000/450" alt="">
+                        <p class="p-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae illo perspiciatis unde doloremque deleniti dicta delectus dolore, ipsum</p>
+                    </div>
+                </div>
+
+                <div class="news">
+                    <div class="news-box">
+                        <h3 class="text-center">Latest news</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore possimus illum modi officiis. Delectus maxime dicta sapiente laudantium fugiat rem ducimus. Temporibus voluptatibus maxime repudiandae.</p>
+                    </div>
+                </div>
+            </main>
+    </div>
+
+    <footer class="blue-bg">
+        <div class="container">
+            <h3 class="text-center">Footer</h3>
+            <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, culpa.</p>
+    </div>
+    </footer>
+</body>
+</html>
